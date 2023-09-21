@@ -1,0 +1,65 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+#animation-section{
+	background-color:#ccc;
+	width:80%;
+	height:70vh;
+	margin:auto;
+}
+
+@keyframes mymove{
+  0% {left:0px;}
+  50%{left:	50%;
+  background-color:#ccc;}
+  75%{opacity:0;}
+  100%{opacity:1; }
+  /* transition:all 2s linear; */
+}
+@keyframes arun{
+	0%{ color:#34eb34;}
+	50%{color:#fff;}
+	75%{color:#444444;}
+	100%{color:#bce0bc;}	
+	
+}
+#animation-section span{
+	font-size:40px;
+	color:#34eb34;
+	padding:10%;
+	animation: arun 0.5s linear infinite;
+}
+
+.animation-images {
+  width: 200px;
+  height: 200px;
+  background: red;
+  border:1px dotted blue;
+  border-radius:50%;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+.animation-images{
+	text-align:center;
+	
+}
+.arun{
+	width: 50px;
+	height: 50px;
+	position:relative;
+	padding-bottom:50px;
+	left:25%;
+	background-color:#792eab;
+	border-radius:20px;
+	animation: circle 5s infinite;
+}
+@keyframes circle{
+	0%{transform:scale(0); background-color:#792eab;}
+	50%{transform:scale(1); background-color:#792eab;}
+	75%{transform:scale(1.5); background-color:#eded0e;}
+	100%{transform:scale(2); background-color:#d30eed;}
+	
+}
